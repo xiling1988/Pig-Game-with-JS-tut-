@@ -51,7 +51,7 @@ document.querySelector(".btn-hold").addEventListener("click", function () {
 
     // check if won
 
-    if (scores[activePlayer] >= 20) {
+    if (scores[activePlayer] >= 100) {
       // display Winner in Player Name
       document.getElementById("name-" + activePlayer).textContent = "WINNER!";
       document
