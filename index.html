@@ -25,6 +25,7 @@
         <div class="player-current-box">
           <div class="player-current-label">Current</div>
           <div class="player-current-score" id="current-0">11</div>
+          <img src="dice-5.png" alt="Dice" class="dice dice-1" />
         </div>
       </div>
 
@@ -34,20 +35,27 @@
         <div class="player-current-box">
           <div class="player-current-label">Current</div>
           <div class="player-current-score" id="current-1">0</div>
+          <img src="dice-5.png" alt="Dice" class="dice dice-2" />
         </div>
       </div>
 
-      <button class="btn-new">
+      <button class="btn btn-new">
         <i class="ion-ios-plus-outline"></i>New game
       </button>
-      <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
-      <button class="btn-hold">
+      <select class="btn limits" name="languages" id="">
+        <option value="200">200</option>
+        <option value="100">100</option>
+        <option value="50">50</option>
+        <option value="20" selected>20</option>
+      </select>
+      <button class="btn btn-roll">
+        <i class="ion-ios-loop"></i>Roll dice
+      </button>
+      <button class="btn btn-hold">
         <i class="ion-ios-download-outline"></i>Hold
       </button>
-
-      <img src="dice-5.png" alt="Dice" class="dice" />
     </div>
 
-    <script src="app.js"></script>
+    <script src="challenge2dice"></script>
   </body>
 </html>

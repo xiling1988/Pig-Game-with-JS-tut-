@@ -46,6 +46,7 @@ body {
   float: left;
   height: 600px;
   padding: 100px;
+  position: relative;
 }
 
 /**********************************************
@@ -107,7 +108,7 @@ body {
   font-size: 30px;
 }
 
-button {
+.btn {
   position: absolute;
   width: 200px;
   left: 50%;
@@ -123,14 +124,14 @@ button {
   transition: background-color 0.3s, color 0.3s;
 }
 
-button:hover {
+.btn:hover {
   font-weight: 600;
 }
-button:hover i {
+.btn:hover i {
   margin-right: 20px;
 }
 
-button:focus {
+.btn:focus {
   outline: none;
 }
 
@@ -157,11 +158,17 @@ i {
 
 .dice {
   position: absolute;
-  left: 50%;
-  top: 178px;
+  /* left: 50%; */
+  top: 220px;
   transform: translateX(-50%);
   height: 100px;
   box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+}
+.dice-2{
+  left: 4rem;
+}
+.dice-1{
+  right: -2.3rem;
 }
 
 .winner {
@@ -170,4 +177,11 @@ i {
 .winner .player-name {
   font-weight: bold;
   color: #eb4d4d;
+}
+
+.limits{
+  top: 100px;
+  text-align: center;
+  width: 60px;
+  text-decoration: none;
 }
